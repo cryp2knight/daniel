@@ -45,7 +45,7 @@
          statusHTML += '<p><small>Updated ' + jQuery.timeago(status.updated_at) + '</small></p>'
          statusHTML += '</div><hr>';
      });
-     $('#projects').html(statusHTML);
+     $('#projects1').html(statusHTML);
      $("#projectsLoading").text('')
  }
  // Send request
