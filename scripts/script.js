@@ -6,6 +6,31 @@
      stringsElement: '#typed-strings',
      typeSpeed: 90
  });
+ var dark = true
+ var dd = 1
+ $('#darkmode').on('click', function(event) {
+    if(dark){
+     $('body').css({
+         'background-color': 'rgb(21, 32, 43)',
+         'color': 'white'
+     });
+     $('.jumbotron').css({
+         'background-color': '#192734',
+         'color': 'white'
+     });
+     dark = false
+ }else{
+    $('body').css({
+         'background-color': 'white',
+         'color': 'black'
+     });
+     $('.jumbotron').css({
+         'background-color': '#e9ecef',
+         'color': 'black'
+     });
+     dark = true
+ }
+ });
  $("#rssLoading").html('<div class="spinner-border"></div>&nbsp;&nbsp;Loading...')
  $("#projectsLoading").html('<div class="spinner-border"></div>&nbsp;&nbsp;Loading...')
  $("#rss").rss("https://medium.com/feed/@decastrodanield", {
