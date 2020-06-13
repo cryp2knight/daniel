@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daniel De Castro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
+    <nav class="navbar is-fixed-top pad has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <h2 class="title">Daniel De Castro</h2>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="blogs.html">Blogs</a>
+                <a class="navbar-item is-active" href="projects.html">Projects</a>
+                <a class="navbar-item" href="resume.html">Resume</a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 15%;">
+        <h2 class="title is-2" style="margin-left: 5%;">Projects</h2>
+        <hr>
+        <div id="projects">
+            <div id="projects1">
+                <center>
+                    <div id="projectsLoading">
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br><br>
+        <div class="has-text-centered"><span>© 2020</span></div>
+        <div class="has-text-centered">
+            <a href="https://www.linkedin.com/in/decastrodanield/">LinkedIn</a>&nbsp;&nbsp;
+            <a href="https://github.com/cryp2knight">GitHub</a>&nbsp;&nbsp;
+            <a href="https://twitter.com/dddc_10">Twitter</a>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+    <script defer="" src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/jquery.timeago.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $("#projectsLoading").html('<div class="loader"></div>&nbsp;&nbsp;Loading...')
+        // Create a request variable and assign a new XMLHttpRequest object to it.
+        var request = new XMLHttpRequest()
+        // Open a new connection, using the GET request on the URL endpoint
+        request.open('GET', 'https://api.github.com/users/cryp2knight/repos', true)
+        request.onload = function () {
+            // Begin accessing JSON data here
+            var data = JSON.parse(this.response);
+            var statusHTML = '';
+            $.each(data, function (i, status) {
+                statusHTML += '<div class="box">';
+                statusHTML += '<a href="' + status.html_url + '"><h4 class="title is-4">' + status.name + '</h4></a>';
+                statusHTML += '<p><small>Updated ' + jQuery.timeago(status.updated_at) + '</small></p>'
+                statusHTML += '<p class="subtitle is-5">' + status.description + '</p>';
+                statusHTML += '<span class="tag ' + tags[Math.floor((Math.random() * 8))] + '">' + status.language + '</span>';
+                statusHTML += '</div>';
+            });
+            $('#projects1').html(statusHTML);
+            $("#projectsLoading").text('')
+        }
+        // Send request
+        request.send();
+    </script>
+</body>
+
+</html>

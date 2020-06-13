@@ -1,288 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-        <title>
-            Daniel De Castro
-        </title>
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<!--        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-NkI/Nlr1DZ5rUXWWdnuZb97FQRgCCcwC66DC+HUCY0oVx6BgBHUfPcwL1vwp93JZ" crossorigin="anonymous"> -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!--     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Monsterrat&display=swap" rel="stylesheet"/> -->
-         <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
-        <style type="text/css">
-            .cool {
-              font-family:  'Computer Modern Typewriter', monospace;
-              font-size: 20px;
-            }
-            body{
-                font-family: 'Computer Modern Serif', serif
-            }
-            #particles-js {
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              z-index: 0;
-            }
+<html class="has-navbar-fixed-top">
 
-        </style>
-        <script src="scripts/particles.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164526558-1">
-        </script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Daniel De Castro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
 
-            gtag('config', 'UA-164526558-1');
-        </script>
-    </head>
-    <body>
-        <div id="particles-js"></div>
-        <br>
+</head>
 
-        <div class="container">
-        <h1>Daniel De Castro</h1>
-            <br>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="jumbotron cool">
-                        <div id="typed-strings">
-                        <p>
-                            Hello, world!   welcome to my page
-                        </p>
-                    </div><span id="typed"></span>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#blogs">
-                                blogs
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#aboutme">
-                                about me
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#education">
-                                education
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#skills">
-                                skills
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#projects">
-                                projects
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="blogs">
-                            <br>
-                            <div id="rss">
-                                <div id="rssLoading">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="aboutme">
-                            <br>
-                            <p>
-                                Hi I am Daniel, a computer science student. I enjoyed a lot of things although im not pretty good at most of them (
-                                <em>
-                                    if you want a complete list of the things im terrible at pls see this
-                                    <a href="#">
-                                        link
-                                    </a>
-                                </em>
-                                ).
-                            </p>
-                            <p>
-                                The universe is full of secrets and mysteries that have always been fascinating to me. While some of its mystery is difficult to decipher, as a computer science student, I know that answers to these secrets could be decoded -- like how enigma was broken by Alan Turing and won the war -- to something more simple, readable and understandable.
-                            </p>
-                        </div>
-                        <div class="tab-pane fade" id="education">
-                            <br>
-                            <ul>
-                                <li>
-                                    <b>
-                                        Batangas State University - Main Campus II
-                                    </b>
-                                    Alangilan, Batangas City
-                                    <em>
-                                        expected June 2022
-                                    </em>
-                                    <ul>
-                                        <li>
-                                            Bachelor of Science in Computer Science
-                                            <li>
-                                                Relevant courses: Design and Analysis of Algorithm, Data Structures, Number Theory, Discrete Mathematics
-                                                <li>
-                                                    GWA: 1.45
-                                                </li>
-                                            </li>
-                                        </li>
-                                    </ul>
-                                    <li>
-                                        <b>
-                                            STI Academic Center Batangas
-                                        </b>
-                                        Kumintang Ilaya, Batangas City
-                                        <em>
-                                            June 2016 - April 2018
-                                        </em>
-                                        <ul>
-                                            <li>
-                                                Senior High School
-                                                <li>
-                                                    Technical-Vocational Track - Computer Programming NCIII (Java and .Net Technology)
-                                                </li>
-                                            </li>
-                                        </ul>
-                                        <li>
-                                            <b>
-                                                Batangas National High School
-                                            </b>
-                                            Rizal Ave., Batangas City
-                                            <em>
-                                                June 2012 - March 2016
-                                            </em>
-                                            <ul>
-                                                <li>
-                                                    Junior High School
-                                                </li>
-                                                <li>
-                                                    Engineering and Science Education Program (ESEP)
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </li>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane fade" id="skills">
-                            <br>
-                            <ul>
-                                <li>
-                                    Programming languages
-                                </li>
-                                <ul>
-                                    <li>
-                                        Python
-                                    </li>
-                                    <li>
-                                        Java
-                                    </li>
-                                    <li>
-                                        JavaScript
-                                    </li>
-
-                                    <li>
-                                        C++
-                                    </li>
-                                    <li>
-                                        SQL
-                                    </li>
-                                </ul>
-                                <li>
-                                    Tools
-                                </li>
-                                <ul>
-                                    <li>
-                                        Linux
-                                    </li>
-                                    <li>
-                                        Jupyter
-                                    </li>
-                                    <li>
-                                        Microsoft Office
-                                    </li>
-                                    <li>
-                                        Adobe Photoshop, Indesign and Illustrator
-                                    </li>
-                                </ul>
-                                <li>
-                                    Machine Learning
-                                </li>
-                                <li>
-                                    Software and web development
-                                </li>
-                                <li>
-                                    Layout design
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab-pane fade" id="projects">
-                            <br>
-                            <div id="projects1">
-                                <div id="projectsLoading">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <footer id="footer">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul class="list-unstyled">
-                            <li class="float-lg-right">
-                                <a href="#top">
-                                    Back to top
-                                </a>
-                            </li>
-                            <li>
-                                <button class="btn" id="darkmode">
-            <img id="darkmode" src="scripts/night.svg" width="30" height="30"/>
-        </button>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/decastrodanield/">
-                                    LinkedIn
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/dddc_10">
-                                    Twitter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/cryp2knight">
-                                    GitHub
-                                </a>
-                            </li>
-                        </ul>
-                        <p>
-                            Contact me at
-                            <a href="#">
-                                decastrodanield@gmail.com
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </footer>
+<body>
+    <button onclick="topFunction()" id="btnTop" title="Go to top">Top</button>
+    <nav class="navbar is-fixed-top pad has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <h2 class="title">Daniel De Castro</h2>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-        <script src="scripts/particles.js"></script>
-        <script src="scripts/jquery.min.js">
-        </script>
-        <script src="scripts/jquery.timeago.js">
-        </script>
-        <script src="scripts/jquery.rss.min.js">
-        </script>
-        <script src="scripts/bootstrap.min.js">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-        <script src="scripts/script.js">
-        </script>
-    </body>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="blogs.html">Blogs</a>
+                <a class="navbar-item" href="projects.html">Projects</a>
+                <a class="navbar-item" href="resume.html">Resume</a>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 15%;">
+        <div class="box">
+            <article class="media">
+                <div class="media-left">
+                    <figure class="image is-64x64">
+                        <img class="is-rounded"
+                            src="https://pbs.twimg.com/profile_images/1253649650269057024/TiaoDiNM_400x400.jpg"
+                            alt="Image" />
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <div class="content">
+                        <strong>About me</strong><br /><small>@decastrodaniel</small>
+                    </div>
+                </div>
+            </article>
+            <article class="media">
+                <div class="media-content pad">
+                    <div class="content">
+                        <p>
+                            Hi I am <strong>Daniel</strong>, a computer science student. I
+                            enjoyed a lot of things although I'm not pretty good at most of
+                            them
+                            <i>( if you want a complete list of the things im terrible at pls
+                                see this <a href="">link</a> )</i>.
+                        </p>
+                        <p>
+                            The universe is full of secrets and mysteries that have always
+                            been fascinating to me. While some of its mystery is difficult to
+                            decipher, as a computer science student, I know that answers to
+                            these secrets could be decoded -- like how enigma was broken by
+                            Alan Turing and won the war -- to something simpler, more readable
+                            and understandable.
+                        </p>
+                        <br>
+                    </div>
+                    <nav class="level is-mobile">
+                        <div class="level-left">
+                            <a class="level-item" aria-label="reply">
+                                <span class="icon is-small">
+                                    <i class="fas fa-reply" aria-hidden="true"></i>
+                                </span>&nbsp;&nbsp;1.5k
+                            </a>
+                            <a class="level-item" aria-label="retweet">
+                                <span class="icon is-small">
+                                    <i class="fas fa-retweet" aria-hidden="true"></i>
+                                </span>&nbsp;&nbsp;8.6M
+                            </a>
+                            <a class="level-item" aria-label="like">
+                                <span class="icon is-small">
+                                    <i class="fas fa-heart" aria-hidden="true"></i>
+                                </span>&nbsp;&nbsp;9.9B
+                            </a>
+                        </div>
+                    </nav>
+
+                </div>
+
+            </article>
+        </div>
+    </div>
+    <footer>
+        <br><br>
+        <div class="has-text-centered"><span>© 2020</span></div>
+        <div class="has-text-centered">
+            <a href="https://www.linkedin.com/in/decastrodanield/">LinkedIn</a>&nbsp;&nbsp;
+            <a href="https://github.com/cryp2knight">GitHub</a>&nbsp;&nbsp;
+            <a href="https://twitter.com/dddc_10">Twitter</a>
+            <br>
+            <br>
+        </div>
+    </footer>
+
+    <script defer="" src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
 </html>
