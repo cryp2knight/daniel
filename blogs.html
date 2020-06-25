@@ -13,7 +13,7 @@
     </script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-164526558-1');
@@ -51,15 +51,21 @@
         </div>
     </nav>
     <div class="container is-fluid mt-5">
-        <h2 class="title is-2">Blogs</h2>
-        <hr>
-        <div id="blogs">
-            <div id="rss">
-                <center>
-                    <div id="rssLoading">
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column is-two-thirds">
+                <h2 class="title is-2">Blogs</h2>
+                <hr>
+                <div id="blogs">
+                    <div id="rss">
+                        <center>
+                            <div id="rssLoading">
+                            </div>
+                        </center>
                     </div>
-                </center>
+                </div>
             </div>
+            <div class="column"></div>
         </div>
     </div>
     <footer>
