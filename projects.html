@@ -93,7 +93,8 @@
                 statusHTML += '<a href="' + status.html_url + '"><h4 class="title is-4">' + status.name + '</h4></a>';
                 statusHTML += '<p><small>Updated ' + jQuery.timeago(status.updated_at) + '</small></p>'
                 statusHTML += '<p class="subtitle is-5">' + status.description + '</p>';
-                statusHTML += '<span class="tag ' + tags[Math.floor((Math.random() * 8))] + '">' + status.language + '</span>';
+                if (status.language)
+                    statusHTML += '<span class="tag ' + tags[Math.floor((Math.random() * 8))] + '">' + status.language + '</span>';
                 statusHTML += '</div>';
             });
             $('#projects1').html(statusHTML);

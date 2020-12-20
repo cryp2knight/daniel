@@ -1,6 +1,7 @@
-.pad {
-
+html {
+  scroll-behavior: smooth;
 }
+
 
 #btnTop {
     display: none; /* Hidden by default */

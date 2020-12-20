@@ -104,6 +104,9 @@
                     return temp
                 }
             },
+            filter: function (entry, tokens) {
+                return entry.categories.length > 0
+            },
             success: function () {
                 $("#rssLoading").text('')
             }
