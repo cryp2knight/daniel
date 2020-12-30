@@ -1,3 +1,7 @@
+import siteMeta from './utils/siteMeta'
+
+const meta = siteMeta()
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -6,9 +10,15 @@ export default {
   head: {
     title: 'Daniel De Castro',
     meta: [
+      ...meta,
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Daniel De Castro\'s personal webpage' }
+      { hid: 'description', name: 'description', content: 'Daniel\'s personal webpage' },
+      { property: 'og:site_name', content: 'Daniel De Castro' },
+      { property: 'og:image:width', content: '300' },
+      { property: 'og:image:height', content: '300' },
+      { name: 'twitter:site', content: '@dddc_10' },
+      { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
@@ -38,7 +48,8 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    '@nuxtjs/dotenv'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
