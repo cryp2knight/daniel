@@ -1,4 +1,5 @@
-# daniel-web
+# Daniel De Castro
+Daniel De Castro's personal website
 
 ## Build Setup
 

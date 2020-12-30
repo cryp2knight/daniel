@@ -4,6 +4,8 @@ export default ({ app }) => {
   /*
    ** Only run on client-side and only in production mode
    */
+  if (process.env.ENV !== 'prod')
+    return;
   /*
      ** Include Google Analytics Script
      */

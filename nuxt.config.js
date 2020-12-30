@@ -13,11 +13,11 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.png' },
       {
-        rel: "stylesheet",
+        rel: 'stylesheet',
         href:
-          "https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap",
-      },
-    ],
+          'https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap'
+      }
+    ]
 
   },
 
@@ -48,7 +48,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    '@nuxtjs/pwa'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -64,4 +64,8 @@ export default {
       }
     }
   },
+
+  generate: {
+    fallback: true
+  }
 }

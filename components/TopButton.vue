@@ -5,38 +5,38 @@
     :style="`display: ${showButton ? 'block' : 'none'}`"
     @click="goToTop"
   >
-    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    <i class="fa fa-arrow-up" aria-hidden="true" />
   </button>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue'
 export default Vue.extend({
-  data() {
+  data () {
     return {
-      showButton: false,
-    };
+      showButton: false
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', () => this.scroll())
   },
   methods: {
-    goToTop() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    goToTop () {
+      document.body.scrollTop = 0 // For Safari
+      document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
     },
-    scroll() {
+    scroll () {
       if (
         document.body.scrollTop > 20 ||
         document.documentElement.scrollTop > 20
       ) {
-        this.showButton = true;
+        this.showButton = true
       } else {
-        this.showButton = false;
+        this.showButton = false
       }
-    },
-  },
-  mounted() {
-    window.addEventListener("scroll", (e) => this.scroll());
-  },
-});
+    }
+  }
+})
 </script>
 
 <style scoped>
