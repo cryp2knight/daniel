@@ -1,7 +1,6 @@
 export default {
     async discordify({ commit }: any, msg: string) {
-        console.log(process.env.ENV)
-        if (process.env.ENV !== 'prod')
+        if (process.env.ENV === 'dev')
             return;
         // haha this could still be seen from the XHR but yeah 
         // @ts-ignore
