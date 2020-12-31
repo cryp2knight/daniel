@@ -27,6 +27,9 @@ export default {
         href:
           'https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap'
       }
+    ],
+    script: [
+      { src: 'https://kit.fontawesome.com/80c195ae41.js', crossorigin: 'anonymous' }
     ]
 
   },
@@ -34,7 +37,6 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     '@assets/css/main.css',
-    '@assets/font-awesome-4.7.0/css/font-awesome.min.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
