@@ -1,3 +1,1 @@
-export default {
-    tags: ["is-black", "is-dark", "is-primary", "is-link", "is-info", "is-success", "is-warning", "is-danger"],
-}
+export default ["is-black", "is-dark", "is-primary", "is-link", "is-info", "is-success", "is-warning", "is-danger"]

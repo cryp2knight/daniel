@@ -32,7 +32,7 @@ export default Vue.extend({
   },
   computed: {
     tags () {
-      return tags.tags
+      return tags
     }
   }
 })

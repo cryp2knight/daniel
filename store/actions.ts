@@ -4,8 +4,11 @@ export default {
     async discordify({ commit }: any, msg: string) {
         if (process.env.ENV === 'env')
             return;
-        // haha this could still be seen from the XHR but yeah 
-        // @ts-ignore
-        await this.$axios.post(discordHook, { content: msg + window.location.href })
+        try {
+            // @ts-ignore
+            await this.$axios.post(discordHook, { content: msg + window.location.href })
+        } catch (error) {
+            console.warn(error)
+        }
     }
 }

@@ -2,7 +2,7 @@
   <footer class="py-6">
     <div class="has-text-centered">
       <a
-        :href="`https://www.linkedin.com/in/${usernames.linkeIn}`"
+        :href="`https://www.linkedin.com/in/${usernames.linkedIn}`"
         class="px-2"
       >
         <i class="fa fa-linkedin" aria-hidden="true" />

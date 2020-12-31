@@ -1,5 +1,5 @@
 # Daniel De Castro
-Daniel De Castro's personal website
+My personal website
 
 ## Build Setup
 

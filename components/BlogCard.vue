@@ -45,7 +45,7 @@ export default Vue.extend({
   },
   computed: {
     tags () {
-      return tags.tags
+      return tags
     },
     imageUrl () {
       const content = this.blog['content:encoded']

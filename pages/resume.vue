@@ -290,7 +290,7 @@ export default Vue.extend({
   methods: {
     viewResume () {
       this.$store
-        .dispatch('discordify', 'Someone looking on your resume. ')
+        .dispatch('discordify', 'Someone is looking on your resume. ')
         .then(() => {
           window.location.href = 'my_resume_public.pdf'
         })
