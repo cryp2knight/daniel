@@ -1,12 +1,12 @@
 <template>
   <nav
-    class="navbar is-fixed-top is-transparent"
+    class="navbar is-fixed-top is-transparent is-lowercase"
     role="navigation"
     aria-label="main navigation"
   >
     <div class="navbar-brand px-3">
       <nuxt-link class="navbar-item" to="/">
-        <h1 class="title">
+        <h1 class="is-size-4 has-text-weight-semibold">
           Daniel De Castro
         </h1>
       </nuxt-link>
@@ -24,7 +24,7 @@
       </a>
     </div>
     <div class="navbar-menu px-3" :class="toggle && 'is-active'">
-      <div class="navbar-end is-uppercase">
+      <div class="navbar-end">
         <nuxt-link class="navbar-item" to="/blogs">
           Blogs
         </nuxt-link>
