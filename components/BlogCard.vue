@@ -50,10 +50,16 @@ export default Vue.extend({
     imageUrl () {
       const content = this.blog['content:encoded']
       if (!content) { return null }
-      const img = content.match(/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i)
+      const img = content.match(/<img.+?src=['"]([^'"]+)['"].*?>/i)
       if (img.length > 0) { return img[1] }
       return null
     }
   }
 })
 </script>
+
+<style scoped>
+a:hover {
+  text-decoration: underline;
+}
+</style>

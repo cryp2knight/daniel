@@ -28,3 +28,9 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style scoped>
+h2 {
+  color: white !important;
+}
+</style>

@@ -48,7 +48,7 @@ export default Vue.extend({
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: black; /* Set a background color */
+  background-color: #2c3e50; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 10px; /* Some padding */
@@ -56,7 +56,11 @@ export default Vue.extend({
   font-size: 18px; /* Increase font size */
 }
 
+i {
+  color: white !important;
+}
+
 #btnTop:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: black; /* Add a dark-grey background on hover */
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar is-fixed-top is-transparent is-lowercase"
+    class="navbar is-fixed-top is-transparent is-lowercase my-navbar"
     role="navigation"
     aria-label="main navigation"
   >
@@ -23,7 +23,7 @@
         <span aria-hidden="true" />
       </a>
     </div>
-    <div class="navbar-menu px-3" :class="toggle && 'is-active'">
+    <div class="navbar-menu px-3 my-navbar" :class="toggle && 'is-active'">
       <div class="navbar-end">
         <nuxt-link class="navbar-item" to="/blogs">
           Blogs
@@ -49,3 +49,18 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style scoped>
+.my-navbar {
+  background-color: #2c3e50;
+}
+a,
+h1 {
+  color: white !important;
+}
+a:hover,
+a:active,
+a:visited {
+  background-color: black !important;
+}
+</style>

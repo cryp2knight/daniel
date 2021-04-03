@@ -7,7 +7,7 @@
         </figure>
       </div>
       <div class="column">
-        <div class="container">
+        <div class="container box">
           <h1 class="title is-1">
             404
           </h1>
@@ -19,3 +19,9 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+img {
+  filter: drop-shadow(16px 16px 10px rgba(195, 206, 236, 0.74));
+}
+</style>

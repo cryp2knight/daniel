@@ -37,3 +37,9 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style scoped>
+a:hover {
+  text-decoration: underline;
+}
+</style>

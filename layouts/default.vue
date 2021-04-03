@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div class="skewed" />
     <Navigation />
     <TopButton />
     <div class="container is-max-desktop">
@@ -24,3 +25,19 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style scoped>
+.skewed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: #2c3e50;
+  z-index: 0;
+  transform: skewY(8deg);
+  transform-origin: top right;
+}
+</style>

@@ -5,3 +5,7 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
 }
+
+i {
+  color: #2c3e50 !important;
+}

@@ -137,8 +137,7 @@
 
     <div id="activities" class="box">
       <h4 class="title is-4">
-        <i class="fa fa-star" aria-hidden="true" /> Extra Curricular
-        Activities
+        <i class="fa fa-star" aria-hidden="true" /> Extra Curricular Activities
       </h4>
       <h5 class="title is-5">
         Amazon Build On, Philippines 2020
@@ -298,3 +297,15 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style scoped>
+button {
+  background-color: #2c3e50 !important;
+}
+button:hover {
+  background-color: black !important;
+}
+button > span > i {
+  color: white !important;
+}
+</style>

@@ -25,7 +25,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-        'https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&family=Sen:wght@400;700&display=swap'
+          'https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&family=Sen:wght@400;700&display=swap'
       }
     ],
     script: [
@@ -36,7 +36,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '@assets/css/main.css',
+    '@assets/css/main.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -76,6 +76,11 @@ export default {
         }
       }
     }
+  },
+
+  env: {
+    isDev: process.env.ENV === 'dev',
+    discordHook: process.env.DISCORD_HOOK
   },
 
   generate: {

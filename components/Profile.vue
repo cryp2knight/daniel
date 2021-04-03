@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container my-card">
     <h1 class="title is-1">
       Hi! I'm Daniel
     </h1>
@@ -10,7 +10,7 @@
     <p class="is-6">
       @{{ github.login }}
     </p>
-    <div class="level is-mobile">
+    <div class="level wrap">
       <div class="level-left has-text-grey">
         <span class="level-item">
           <span class="icon is-small mr-2">
@@ -50,3 +50,19 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style scoped>
+.my-card {
+  background-color: white !important;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 24px 27px -14px rgba(195, 206, 236, 0.74);
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1rem;
+}
+</style>
